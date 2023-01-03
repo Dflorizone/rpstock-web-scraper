@@ -22,7 +22,7 @@ def rp_stock():
         model = ck_prod[x]
         r_ps = requests.get(f'https://www.pishop.ca/product/raspberry-pi-4-model-b-{version}gb/') # pishop response
         r_ada = requests.get('https://www.adafruit.com/product/4295') # adafruit response
-        r_ck = requests.get(f'https://www.canakit.com/raspberry-pi-4{model}.html')
+        r_ck = requests.get(f'https://www.canakit.com/raspberry-pi-4{model}.html') # canakit response
         html_ps = r_ps.text
         html_ada = r_ada.text
         html_ck = r_ck.text
